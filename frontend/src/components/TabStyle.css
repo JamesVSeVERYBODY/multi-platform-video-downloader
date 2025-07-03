@@ -1,0 +1,266 @@
+.page-wrapper {
+    padding: 40px;
+    background-color: #f2f3f7;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  /* Judul */
+  .history-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Search + Filter */
+  .history-tools {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .history-search,
+  .history-filter {
+    padding: 10px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    min-width: 240px;
+    outline: none;
+  }
+  
+  .history-search:focus {
+    border-color: #007aff;
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.1);
+  }
+  
+  /* Wrapper untuk Header dan Tools */
+  .history-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Kartu History */
+  .history-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    max-width: 480px;
+  }
+  
+  .history-card {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 0.3s ease;
+    gap: 10px;
+  }
+  
+  /* Title + Icon */
+  .history-info-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    word-break: break-word;
+  }
+  
+  /* Link */
+  .history-link {
+    color: #007aff;
+    text-decoration: none;
+    word-break: break-word;
+    max-width: 320px;
+  }
+  
+  .history-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Thumbnail */
+  .history-thumbnail-small {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  /* Timestamp */
+  .history-date {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .empty {
+    color: #999;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    color: #ff4d4f;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: -8px;
+    transition: color 0.2s ease;
+  }
+  
+  .delete-button:hover {
+    color: #d9363e;
+  }
+
+  .undo-button {
+    padding: 8px 16px;
+    background-color: #ffe8cc;
+    color: #663c00;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .undo-button:hover {
+    background-color: #ffd8a8;
+  }
+  
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #f2f3f7;
+    z-index: 100;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #f2f3f7;
+    z-index: 100;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  
+  .page-wrapper {
+    padding: 40px;
+    background-color: #f2f3f7;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .smart-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .url-input {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    min-width: 300px;
+  }
+  
+  .preview-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .preview-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    display: flex;
+    gap: 16px;
+    max-width: 720px;
+    align-items: center;
+  }
+  
+  .preview-thumbnail {
+    width: 160px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .preview-details h3 {
+    margin: 0 0 12px 0;
+  }
+  
+  .format-select {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .download-btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .bookmark-button {
+    background-color: transparent;
+    border: none;
+    color: #ffa500;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 4px;
+    transition: color 0.2s ease;
+  }
+  
+  .bookmark-button:hover {
+    color: #cc8400;
+  }
+  
